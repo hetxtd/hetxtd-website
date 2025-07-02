@@ -3,42 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frank: Your Relationship Guide</title>
+    <title>Redirecting to Frank: Your Relationship Guide</title>
+    <!-- IMPORTANT: This meta tag redirects the user after 0 seconds -->
+    <meta http-equiv="refresh" content="0; url=https://frank-hetxtd-njm7haj4lxwzxeg8hjrlly.streamlit.app/">
+    
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden; /* Hide scrollbars on the main page */
-            font-family: 'Inter', sans-serif; /* Use Inter font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: #FDF6F6; /* Match your app's background */
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none; /* Remove iframe border */
-        }
-        /* Optional: Add a small loading message or spinner if you want */
-        .loading-message {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 1.2em;
-            color: #A91D3A;
             font-family: 'Inter', sans-serif;
+            color: #333333;
+            text-align: center;
+        }
+        .message-container {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #A91D3A;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        a {
+            color: #A91D3A;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
-    <!-- Preload Inter font for smoother loading -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="loading-message">Loading Frank...</div>
-    <iframe
-        src="https://frank-hetxtd-njm7haj4lxwzxeg8hjrlly.streamlit.app/"
-        title="Frank: Your Relationship Guide"
-        onload="this.style.display='block'; document.querySelector('.loading-message').style.display='none';"
-        style="display:none;"
-    ></iframe>
+    <div class="message-container">
+        <h1>Redirecting to Frank...</h1>
+        <p>If you are not redirected automatically, please click the link below:</p>
+        <p><a href="https://frank-hetxtd-njm7haj4lxwzxeg8hjrlly.streamlit.app/">Go to Frank's App</a></p>
+    </div>
 </body>
 </html>
